@@ -1,6 +1,23 @@
 ﻿@page "/Usuarios/Registrar"
 @model RegistrarModel
 @{
+
+    var image = "/images/images/default.png";
 }
 
-<h1>loco</h1>
+
+<div class="container p-4">
+    <form method="post" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <output id="imageUser">
+                            <img src="@image class="imageUser"/>
+                        </output>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
